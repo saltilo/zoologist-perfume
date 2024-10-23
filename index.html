@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zoologist Perfume Selector</title>
+  <link rel="stylesheet" href="./CSS/main.css">
+  <link rel="stylesheet" href="./CSS/media.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta name="description"
+    content="Discover the perfect Zoologist fragrance with our personalized perfume selector. Answer a few questions about your preferences, style, and occasions to get the best match from our diverse collection. Explore a variety of scents including floral, woody, fresh, and more, tailored to your unique taste and mood. Find your ideal perfume effortlessly and enhance your scent experience.">
+</head>
+
+<body>
+  <header><a href="https://www.zoologistperfumes.com/" target="_blank">
+      <img class="header__logo"
+        src="//www.zoologistperfumes.com/cdn/shop/files/zoologist-logo-retina-canada_2000x.png?v=1701660602" alt=""></a>
+
+  </header>
+  <main>
+    <section id="options">
+      <h2>I know what I want</h2>
+      <button id="criteriaBtn">Choose by Criteria</button>
+
+
+      <h2>I don’t know what I want</h2>
+      <button id="testBtn">Take a Test</button>
+    </section>
+    <section id="criteria" class="hidden">
+
+      <form id="criteriaForm">
+        <label for="mood">Mood:
+          <select id="mood" name="mood">
+            <option value="" selected disabled hidden>Select an option</option>
+            <option value="relaxed">Relaxed</option>
+            <option value="cheerful">Cheerful</option>
+            <option value="mysterious">Mysterious</option>
+            <option value="energized">Energized</option>
+          </select>
+        </label>
+        <label for="style">Style of Clothing:
+          <select id="style" name="style">
+            <option value="" selected disabled hidden>Select an option</option>
+            <option value="casual">Casual</option>
+            <option value="elegant">Elegant</option>
+            <option value="sporty">Sporty</option>
+            <option value="bohemian">Bohemian</option>
+          </select>
+        </label>
+        <label for="character">Character:
+          <select id="character" name="character">
+            <option value="" selected disabled hidden>Select an option</option>
+            <option value="introverted">Introverted</option>
+            <option value="extroverted">Extroverted</option>
+            <option value="adventurous">Adventurous</option>
+            <option value="creative">Creative</option>
+          </select>
+        </label>
+        <label for="intensity">Intensity:
+          <select id="intensity" name="intensity">
+            <option value="" selected disabled hidden>Select an option</option>
+            <option value="light">Light</option>
+            <option value="moderate">Moderate</option>
+            <option value="intense">Intense</option>
+          </select>
+        </label>
+        <label for="timeOfDay">Time of Day:
+          <select id="timeOfDay" name="timeOfDay">
+            <option value="" selected disabled hidden>Select an option</option>
+            <option value="day">Day</option>
+            <option value="evening">Evening</option>
+          </select>
+        </label>
+        <button type="submit">Find Perfume</button>
+      </form>
+    </section>
+
+    <section id="test" class="hidden">
+
+      <form id="testForm">
+        <div class="question" data-question="1">
+          <p class="question__title">1/9: Do you prefer fresh or warm scents?</p>
+          <label for="fresh">Fresh
+            <input type="radio" class="modern-radio" id="fresh" name="question1" value="fresh">
+            <span></span>
+          </label>
+
+          <label for="warm">Warm
+            <input type="radio" class="modern-radio" id="warm" name="question1" value="warm">
+            <span></span>
+          </label>
+          <button type="button" id="nextQuestionBtn1" class="next-btn">Next</button>
+        </div>
+        <div class="question hidden" data-question="2">
+          <p class="question__title">2/9: What type of scent do you like?</p>
+
+
+          <label for="floral">Floral
+            <input type="radio" class="modern-radio" id="floral" name="question2" value="floral">
+            <span></span>
+          </label>
+
+          <div class="radio-group">
+
+            <label for="woody">Woody
+              <input type="radio" class="modern-radio" id="woody" name="question2" value="woody">
+              <span></span>
+            </label>
+          </div>
+
+          <label for="spicy">Spicy
+            <input type="radio" class="modern-radio" id="spicy" name="question2" value="spicy">
+            <span></span>
+          </label>
+
+          <label for="sweet">Sweet
+            <input type="radio" class="modern-radio" id="sweet" name="question2" value="sweet">
+            <span></span>
+          </label>
+
+          <label for="freshScent">Fresh
+            <input type="radio" class="modern-radio" id="freshScent" name="question2" value="fresh">
+            <span></span>
+          </label>
+          <button type="button" id="nextQuestionBtn2" class="next-btn">Next</button>
+        </div>
+        <div class="question hidden" data-question="3">
+          <p class="question__title">3/9: Do you prefer light or intense fragrances?</p>
+
+          <label for="light">Light <input type="radio" class="modern-radio" id="light" name="question3"
+              value="light"><span></span>
+          </label>
+
+          <label for="moderate">Moderate <input type="radio" class="modern-radio" id="moderate" name="question3"
+              value="moderate"><span></span></label>
+
+          <label for="intense">Intense <input type="radio" class="modern-radio" id="intense" name="question3"
+              value="intense"><span></span></label>
+          <button type="button" id="nextQuestionBtn3" class="next-btn">Next</button>
+        </div>
+        <div class="question hidden" data-question="4">
+          <p class="question__title">4/9: Which season do you associate your favorite scent with?</p>
+
+          <label for="spring">Spring <input type="radio" class="modern-radio" id="spring" name="question4"
+              value="spring"><span></span></label>
+
+          <label for="summer">Summer <input type="radio" class="modern-radio" id="summer" name="question4"
+              value="summer"><span></span></label>
+
+          <label for="autumn">Autumn <input type="radio" class="modern-radio" id="autumn" name="question4"
+              value="autumn"><span></span></label>
+
+          <label for="winter">Winter <input type="radio" class="modern-radio" id="winter" name="question4"
+              value="winter"><span></span></label>
+          <button type="button" id="nextQuestionBtn4" class="next-btn">Next</button>
+        </div>
+        <div class="question hidden" data-question="5">
+          <p class="question__title">5/9: What kind of mood do you want your fragrance to convey?</p>
+
+          <label for="relaxed">Relaxed <input type="radio" class="modern-radio" id="relaxed" name="question5"
+              value="relaxed"><span></span></label>
+
+          <label for="cheerful">Cheerful <input type="radio" class="modern-radio" id="cheerful" name="question5"
+              value="cheerful"> <span></span></label>
+
+          <label for="mysterious">Mysterious <input type="radio" class="modern-radio" id="mysterious" name="question5"
+              value="mysterious"><span></span></label>
+
+          <label for="energized">Energized <input type="radio" class="modern-radio" id="energized" name="question5"
+              value="energized"><span></span></label>
+
+          <label for="romantic">Romantic <input type="radio" class="modern-radio" id="romantic" name="question5"
+              value="romantic"> <span></span></label>
+
+          <label for="sophisticated">Sophisticated <input type="radio" class="modern-radio" id="sophisticated"
+              name="question5" value="sophisticated"><span></span></label>
+
+          <label for="intenseMood">Intense <input type="radio" class="modern-radio" id="intenseMood" name="question5"
+              value="intenseMood"><span></span></label>
+          <button type="button" id="nextQuestionBtn5" class="next-btn">Next</button>
+        </div>
+        <div class="question hidden" data-question="6">
+          <p class="question__title">6/9: What is your style of clothing?</p>
+
+          <label for="casual">Casual <input type="radio" class="modern-radio" id="casual" name="question6"
+              value="casual"><span></span></label>
+
+          <label for="elegant">Elegant <input type="radio" class="modern-radio" id="elegant" name="question6"
+              value="elegant"><span></span></label>
+
+          <label for="sporty">Sporty <input type="radio" class="modern-radio" id="sporty" name="question6"
+              value="sporty"><span></span></label>
+
+          <label for="bohemian">Bohemian <input type="radio" class="modern-radio" id="bohemian" name="question6"
+              value="bohemian"> <span></span></label>
+
+          <label for="formal">Formal <input type="radio" class="modern-radio" id="formal" name="question6"
+              value="formal"><span></span></label>
+
+          <label for="eclectic">Eclectic <input type="radio" class="modern-radio" id="eclectic" name="question6"
+              value="eclectic"> <span></span></label>
+
+          <label for="comfortable">Comfortable <input type="radio" class="modern-radio" id="comfortable"
+              name="question6" value="comfortable"> <span></span></label>
+          <button type="button" id="nextQuestionBtn6" class="next-btn">Next</button>
+        </div>
+        <div class="question hidden" data-question="7">
+          <p class="question__title">7/9: How would you describe yourself?</p>
+
+          <label for="introverted">Introverted <input type="radio" class="modern-radio" id="introverted"
+              name="question7" value="introverted"><span></span></label>
+
+          <label for="extroverted">Extroverted <input type="radio" class="modern-radio" id="extroverted"
+              name="question7" value="extroverted"> <span></span></label>
+
+          <label for="adventurous">Adventurous <input type="radio" class="modern-radio" id="adventurous"
+              name="question7" value="adventurous"><span></span></label>
+
+          <label for="creative">Creative <input type="radio" class="modern-radio" id="creative" name="question7"
+              value="creative"><span></span></label>
+
+          <label for="friendly">Friendly <input type="radio" class="modern-radio" id="friendly" name="question7"
+              value="friendly"> <span></span></label>
+
+          <label for="calm">Calm <input type="radio" class="modern-radio" id="calm" name="question7" value="calm">
+            <span></span></label>
+
+          <label for="confident">Confident <input type="radio" class="modern-radio" id="confident" name="question7"
+              value="confident"><span></span></label>
+
+          <label for="imaginative">Imaginative <input type="radio" class="modern-radio" id="imaginative"
+              name="question7" value="imaginative"><span></span></label>
+          <button type="button" id="nextQuestionBtn7" class="next-btn">Next</button>
+        </div>
+        <div class="question hidden" data-question="8">
+          <p class="question__title">8/9: What drink do you prefer?</p>
+
+          <label for="coffee">Coffee <input type="radio" class="modern-radio" id="coffee" name="question8"
+              value="coffee"> <span></span></label>
+
+          <label for="tea">Tea <input type="radio" class="modern-radio" id="tea" name="question8" value="tea">
+            <span></span></label>
+
+          <label for="wine">Wine <input type="radio" class="modern-radio" id="wine" name="question8"
+              value="wine"><span></span></label>
+
+          <label for="whiskey">Whiskey <input type="radio" class="modern-radio" id="whiskey" name="question8"
+              value="whiskey"> <span></span></label>
+
+          <label for="fruitJuice">Juice <input type="radio" class="modern-radio" id="fruitJuice" name="question8"
+              value="fruitJuice"> <span></span></label>
+
+          <label for="milk">Milk <input type="radio" class="modern-radio" id="milk" name="question8"
+              value="milk"><span></span></label>
+
+          <label for="lemonade">Lemonade <input type="radio" class="modern-radio" id="lemonade" name="question8"
+              value="lemonade"> <span></span></label>
+          <button type="button" id="nextQuestionBtn8" class="next-btn">Next</button>
+        </div>
+
+        <div class="question hidden" data-question="9">
+          <p class="question__title">9/9: For what event do you need the perfume?</p>
+
+          <label for="work">Work <input type="radio" class="modern-radio" id="work" name="question9"
+              value="work"><span></span></label>
+
+          <label for="party">Party <input type="radio" class="modern-radio" id="party" name="question9"
+              value="party"><span></span></label>
+
+          <label for="date">Date <input type="radio" class="modern-radio" id="date" name="question9" value="date">
+            <span></span></label>
+
+          <label for="relaxing">Relaxing <input type="radio" class="modern-radio" id="relaxing" name="question9"
+              value="relaxing"> <span></span></label>
+
+          <label for="special">Special <input type="radio" class="modern-radio" id="special" name="question9"
+              value="special"><span></span></label>
+
+          <label for="everyday">Everyday <input type="radio" class="modern-radio" id="everyday" name="question9"
+              value="everyday"><span></span></label>
+          <button type="button" id="nextQuestionBtn9" class="next-btn">Get It</button>
+        </div>
+
+
+        <div id="result" class="hidden"></div>
+        <button id="retakeTestBtn" class="hidden">Pick another fragrance</button>
+      </form>
+    </section>
+
+    <section id="results" class="hidden">
+
+      <div id="perfumeResult"></div>
+    </section>
+
+    <section id="results" class="hidden">
+      <div id="perfumeResult"></div>
+      <button id="retakeTestBtn" class="hidden">Retake Test</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    © 2024 Made by <a href="https://saltilo.github.io/saltilo/index.html" target="_blank">Saltilo</a>
+  </footer>
+
+  <script src="./JS/main.js"></script>
+
+</body>
+
+</html>

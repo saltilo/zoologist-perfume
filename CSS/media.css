@@ -1,0 +1,17 @@
+@media (max-width: 600px) {
+  h2 {
+    font-size: 18px;
+  }
+
+  .result-container {
+    flex-direction: column;
+  }
+
+  .result-image {
+    max-width: 60%;
+  }
+
+  .result-description p {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Serif", serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  max-width: 1120px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+h2 {
+  line-height: 1.3;
+  text-align: left;
+  border-top: none;
+  clear: both;
+  font-weight: 300;
+  margin-bottom: 0;
+  margin-top: 2em;
+}
+
+p {
+  margin: 0 0 20px;
+  font-style: normal;
+}
+
+header {
+  color: #1f2022;
+  padding: 20px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 15px;
+  border-bottom: solid 1px #dddddd;
+}
+
+.header__logo {
+  height: 100px;
+}
+
+main {
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+#options > img {
+  height: 250px;
+}
+
+button {
+  background: #1f2022;
+  border: 1px solid #1f2022;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  border-radius: 3px;
+  color: #fff;
+  transition: all 0.2s linear;
+  line-height: 1.5;
+  white-space: inherit;
+  margin: 1em 0;
+}
+
+button:hover {
+  color: #fff;
+  background: #806921;
+  border-color: #806921;
+}
+
+form {
+  margin: 20px 0;
+}
+
+select {
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+select:focus {
+  outline: 1px solid #806921;
+}
+
+option {
+  background-color: #fff;
+  color: #333;
+  padding: 10px;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.result-container {
+  display: flex;
+  align-items: flex-start;
+}
+.result-image {
+  flex: 1;
+  max-width: 33%;
+  margin-right: 20px;
+}
+.result-image img {
+  width: 100%;
+  height: auto;
+}
+.result-description {
+  flex: 2;
+}
+
+#perfumeResult > h3 > a {
+  font-size: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+
+#perfumeResult > h3 > a:hover {
+  color: #806921;
+}
+
+.question {
+  margin: 20px 0;
+}
+
+.question__title {
+  font-weight: 500;
+  font-size: 20px;
+  font-style: italic;
+}
+
+label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 17px;
+  user-select: none;
+}
+
+.modern-radio {
+  opacity: 0;
+}
+
+.question span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #c9c9c9;
+  border-radius: 50%;
+}
+
+.question label input:checked ~ span {
+  background-color: #806921;
+}
+
+.question span:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.question label input:checked ~ span:after {
+  display: block;
+}
+.question label span:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.footer {
+  border-top: solid 1px #dddddd;
+  font-size: 14px;
+  line-height: 1.7em;
+  color: #4b4f54;
+  padding: 30px;
+  margin-top: 2em;
+}
+
+.footer a {
+  color: #4b4f54;
+}
+
+.footer a:hover {
+  color: #806921;
+}
